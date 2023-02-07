@@ -84,3 +84,10 @@ jobs:
       # Afeter compiling, upload to exchange
       - name: Publish mule app to Exchange
         run: mvn clean deploy --file pom.xml
+        
+      - name: Deploy to CloudHub 2
+        env:
+          AUTHOR: "Nuno Santos"
+        run: |
+          mvn deploy --file pom.xml -DmuleDeploy -Dcicd.welcome.message="Welcome to Cloudhub 2 - NS" -Denvironment="Sandbox" -Dap.ca.client_id="${{ secrets.CA_CLIENT_ID }}" -Dap.ca.client_secret="${{ secrets.CA_CLIENT_SECRET }}" 
+
