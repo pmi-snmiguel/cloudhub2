@@ -80,3 +80,7 @@ jobs:
         with:
             name: artifacts
             path: target/*.jar
+            
+      # Afeter compiling, upload to exchange
+      - name: Publish mule app to Exchange
+        run: mvn clean deploy --file pom.xml
