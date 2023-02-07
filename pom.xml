@@ -43,7 +43,7 @@
        							<connectedAppClientId>${ap.ca.client_id}</connectedAppClientId>
        							<connectedAppClientSecret>${ap.ca.client_secret}</connectedAppClientSecret>
 							
-							<applicationName>${project.name}-${environment}</applicationName>
+							<applicationName>${project.name}</applicationName>
 							<replicas>1</replicas>
 							<vCores>0.1</vCores>
 							<!-- timeout of 4 minutes -->
