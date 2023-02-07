@@ -4,7 +4,7 @@
 
 	<groupId>a3a5641a-6a43-4a3a-a631-0b368abb9c13</groupId>
 	<artifactId>hello-world-ns</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
 	<name>hello-world-ns</name>
@@ -48,9 +48,9 @@
 							<vCores>0.1</vCores>
 							<!-- timeout of 4 minutes -->
 							<deploymentTimeout>240000</deploymentTimeout>
-							<properties>
+							<secureProperties>
 								<cicd.welcome.message>${cicd.welcome.message}</cicd.welcome.message>
-							</properties>
+							</secureProperties>
 							<deploymentSettings>
 								<http>
 									<inbound>
